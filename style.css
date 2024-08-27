@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  margin: 0 auto;
+  margin-top: 56px;
+  background-color: #fff;
+  width: 90%;
+  border-radius: 0.4rem;
+  padding: 10px;
+}
+
+.section1 {
+  margin-top: 0;
+  background-color: rgb(44, 44, 44);
+  height: 80px;
+  width: 100%;
+}
+
+.section1-paragraph {
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  text-transform: uppercase;
+  padding-top: 1.5rem;
+}
+
+.section2 {
+  margin-top: 20px;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  padding: 10px 0;
+}
+
+.underline {
+  width: 100%;
+  border: 1px solid black;
+  color: #000;
+  margin: 0 auto;
+}
+
+.section2-paragraph {
+  font-size: 1rem;
+  margin: 10px 0;
+  text-transform: capitalize;
+  color: #000;
+  text-decoration: underline;
+}
+
+.section2-blockquote {
+  font-size: 12px;
+  background: linear-gradient(to left, rgba(172, 172, 172, 0.2) 99.7%, rgba(172, 172, 172, 1) 99.7%);
+  height: 32px;
+  padding: 8px 12px;
+  color: rgb(127, 127, 127);
+}
+
+.section3-caja {
+  width: 90%;
+  margin: 10px auto;
+  height: 56px;
+  border: 2px solid #000;
+  border-radius: 0.4rem;
+  padding-left: 5px;
+  padding-top: 15px;
+  box-shadow: 2px 2px 10px 2px rgb(0, 0, 0, 0.5);
+}
+
+.--destacada {
+  border: 3px solid #000;
+  background-color: #edcf97;
+}
+
+.section4-relativa {
+  position: relative;
+  width: 90%;
+  height: 50px;
+  margin: 0 auto;
+  background: rgba(116, 193, 251, 0.3);
+  padding: 15px 10px;
+  border-radius: 0.2rem;
+}
+
+.section4-absoluta {
+  position: absolute;
+  right: 42px;
+  height: 50px;
+  background: rgba(116, 197, 251, 0.592);
+  padding: 15px 10px;
+  border-radius: 0.2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.grid-item {
+  margin-top: 10px;
+  height: 45px;
+  background: rgb(164, 198, 253);
+  text-align: center;
+  padding: 10px;
+  border-radius: 0.4rem;
+}
+
+.animacion {
+  margin: 20px;
+  height: 150px;
+  width: 150px;
+  background-color: #ff0000;
+  text-align: center;
+  transition: 0.3s all;
+}
+
+.animacion p {
+  color: red;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 60px;
+}
+
+.animacion:hover {
+  background-color: #fff;
+  border: 2px solid #000;
+}
+
+.mover {
+  margin: 20px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #008000;
+  animation: mover 2s infinite;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(200px);
+    /* 50px */
+  }
+
+  100% {
+    transform: translateX(400px);
+    /* 100px */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: rgb(197, 140, 255);
+  }
+
+  .title {
+    font-size: 12px;
+  }
+}
